@@ -1202,9 +1202,14 @@
       }
       #w-xt9665eb {
         top: 599.25px;
-        left: 100.01248168945312px;
-        width: 254px;
-        height: 32.98124694824219px;
+        left: 0; /* để phần tử bắt đầu từ mép trái */
+        width: 100%; /* chiếm toàn bộ chiều ngang cha chứa */
+        height: 32.98px; /* giữ chiều cao như cũ */
+        text-align: center; /* căn giữa chữ */
+        position: absolute; /* nếu bạn muốn giữ vị trí top, left tuyệt đối */
+        box-sizing: border-box; /* để padding không làm rộng thêm */
+                font-size: 22px;
+        font-weight: bold;
       }
       #w-xt9665eb .text-block {
         /* background: ; */
@@ -2367,7 +2372,7 @@
         left: 0px;
         position: relative;
         width: 420px;
-        height: 989px;
+        height: 670px;
       }
       #w-1rvkvzbl .section-wrapper {
         opacity: 1;
@@ -5237,7 +5242,7 @@
         left: 0px;
         position: relative;
         width: 420px;
-        height: 989px;
+        height: 670px670px;
       }
       #w-1rvkvzbl .section-wrapper {
         opacity: 1;
@@ -7335,7 +7340,8 @@
             <div id="w-h0bwlcvc" class="com-text-block p-absolute is-animation">
               <div class="text-block">
                 <p class="text-block-css full-width">
-                  <span style="font-weight: 700">Nhà hàng Sepia</span><br />
+                  <span style="font-weight: 700">Nhà hàng Phụng Hoàng</span
+                  ><br />
                 </p>
               </div>
             </div>
