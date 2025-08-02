@@ -4077,9 +4077,14 @@
       }
       #w-xt9665eb {
         top: 599.25px;
-        left: 100.01248168945312px;
-        width: 254px;
-        height: 32.98124694824219px;
+        left: 0; /* để phần tử bắt đầu từ mép trái */
+        width: 100%; /* chiếm toàn bộ chiều ngang cha chứa */
+        height: 32.98px; /* giữ chiều cao như cũ */
+        text-align: center; /* căn giữa chữ */
+        position: absolute; /* nếu bạn muốn giữ vị trí top, left tuyệt đối */
+        box-sizing: border-box; /* để padding không làm rộng thêm */
+        font-size: 22px;
+        font-weight: bold;
       }
       #w-xt9665eb .text-block {
         background: ;
