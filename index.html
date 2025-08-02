@@ -10088,7 +10088,14 @@
 
       if (nameFromUrl) {
         const inviteText = document.getElementById("inviteText");
-        inviteText.textContent = inviteText.textContent + " " + nameFromUrl;
+        const decodedName = decodeURIComponent(nameFromUrl);
+
+        // Tạo span bọc tên để in đậm và chữ to
+        const nameSpan = document.createElement("span");
+        nameSpan.classList.add("name-highlight");
+        nameSpan.textContent = " " + decodedName;
+
+        inviteText.appendChild(nameSpan);
       }
     </script>
     <script
